@@ -1,3 +1,24 @@
+@font-face {
+  font-family: 'Neue Montreal Light';
+  src: url('./fonts/PPNeueMontreal-Light.woff2') format('woff2'),
+      url('./fonts/PPNeueMontreal-Light.woff') format('woff');
+}
+@font-face {
+  font-family: 'Neue Montreal Regular';
+  src: url('./fonts/PPNeueMontreal-Regular.woff2') format('woff2'),
+      url('./fonts/PPNeueMontreal-Regular.woff') format('woff');
+}
+@font-face {
+  font-family: 'Neue Montreal Medium';
+  src: url('./fonts/PPNeueMontreal-Medium.woff2') format('woff2'),
+      url('./fonts/PPNeueMontreal-Medium.woff') format('woff');
+}
+@font-face {
+  font-family: 'Neue Montreal Bold';
+  src: url('./fonts/PPNeueMontreal-Bold.woff2') format('woff2'),
+      url('./fonts/PPNeueMontreal-Bold.woff') format('woff');
+}
+
 .App {
   width: 90dvw;
   min-height: 100dvh;

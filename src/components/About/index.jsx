@@ -53,7 +53,7 @@ export default function About() {
 
     return (
         <div className='about'>
-            <div className='page-title'>ABOUT</div>
+            <div className='page-title'>About</div>
             <hr />
             <div className='introduction'>
                 <div className='copy'>
@@ -70,7 +70,7 @@ export default function About() {
                     Born and raised in the Detroit Metro area, I graduated from The University of Michigan where I received my BFA, focusing on painting and fiber art. I began my birth and postpartum doula career in 2017, expanded into full spectrum care, and am now continuing my education in maternal mental health and healing art therapy.  I am currently based on Tongva Land / Los Angeles, CA, serving people virtually as well. 
                     </div>
                 </div>
-                <div className='bio-image'>
+                <div className='image'>
                     <img className='img' src='./images/about1.png' alt='Biograpical Image of Jess Ford' />
                 </div>
             </div>
@@ -80,14 +80,19 @@ export default function About() {
             </div>
             <hr />
             <div className='certifications'>
-                <div className='heading'>Certifications + Trainings</div>
-                <div className='trainings'>
-                    {Certifications.map((cert, index) => (
-                        <div className='cert' key={index}>
-                            <div className='course'>{cert.course}</div>
-                            <div className='org-date'>{cert.org + ' ' + '(' + cert.date + ')'}</div>
-                        </div>
-                    ))}
+                <div className="copy">
+                    <div className='heading'>Certifications + Trainings</div>
+                    <div className='trainings'>
+                        {Certifications.map((cert, index) => (
+                            <div className='cert' key={index}>
+                                <div className='course'>{cert.course}</div>
+                                <div className='org-date'>{cert.org + ' ' + '(' + cert.date + ')'}</div>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+                <div className="image">
+                    <img className='img' src='./images/about2.png' alt='Certifications and Trainings' />
                 </div>
             </div>
         </div>

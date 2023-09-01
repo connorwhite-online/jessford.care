@@ -1,0 +1,58 @@
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5dvw;
+    margin-bottom: 5dvh;
+}
+.counter {
+    font-family: 'Neue Montreal Medium';
+    font-size: 5dvw;
+    color: #1A1D22;
+}
+.arrow {
+    color: #1A1D22;
+    cursor: pointer;
+}
+.testimonial {
+    display: flex;
+    flex-direction: column;
+    gap: 1dvh;
+}
+.testimonial-service {
+    font-family: 'Neue Montreal Regular';
+    font-size: 8dvw;
+    color: #1A1D22;
+}
+.testimonial-location {
+    font-family: 'Neue Montreal Bold';
+    font-size: 5dvw;
+    color: #1A1D22;
+}
+.testimonial-copy {
+    font-family: 'Neue Montreal Regular';
+    font-size: 4dvw;
+    color: #1A1D22;
+}
+
+@media screen and (min-width: 768px) {
+    .controls {
+        gap: 2.5dvw;
+        margin-bottom: 5dvh;
+    }
+    .counter {
+        font-size: 2.5dvw;
+    }
+    .testimonial {
+        gap: 1dvh;
+    }
+    .testimonial-service {
+        font-size: 3.5dvw;
+    }
+    .testimonial-location {
+        font-size: 2dvw;
+    }
+    .testimonial-copy {
+        font-size: 1.5dvw;
+    }
+}

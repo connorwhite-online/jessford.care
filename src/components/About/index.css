@@ -31,6 +31,7 @@ hr {
     display: flex;
     flex-direction: column;
     gap: 5dvh;
+    margin-bottom: 2.5dvh;
 }
 .copy {
 
@@ -42,14 +43,16 @@ hr {
     font-family: 'Neue Montreal Regular';
     font-size: 3.5dvw;
 }
-.bio-image {
+.image {
 
 }
 .img {
     width: 100%;
+    border: 1px solid #1A1D22;
 }
 .cta {
     text-align: center;
+    margin-bottom: 2.5dvh;
 }
 .btn {
     color: white;
@@ -62,7 +65,8 @@ hr {
     cursor: pointer;
 }
 .certifications {
-
+    display: flex;
+    justify-content: center;
 }
 .heading {
     font-family: 'Neue Montreal Medium';
@@ -100,6 +104,7 @@ hr {
         flex-direction: row;
         justify-content: space-between;
         gap: 20dvw;
+        margin-bottom: 5dvh;
     }
     .copy {
         width: 45dvw;
@@ -113,7 +118,7 @@ hr {
         font-size: 1.25dvw;
         color: #1A1D22;
     }
-    .bio-image {
+    .image {
         width: 30dvw;
     }
     .img {
@@ -121,14 +126,14 @@ hr {
         height: auto;
     }
     .cta {
-    
+        margin-bottom: 5dvh;
     }
     .btn {
         font-size: 1.25dvw;
         padding: 1dvh 2dvw;
     }
     .certifications {
-    
+        justify-content: space-between;
     }
     .trainings {
         gap: 1.5dvh;
