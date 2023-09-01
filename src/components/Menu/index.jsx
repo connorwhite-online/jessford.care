@@ -21,13 +21,13 @@ export default function Menu() {
             <div className='links'>
                 <div className='nav'>
                     <NavLink className='navlink' to='/'>About</NavLink>
-                    <NavLink className='navlink' to='/about'>Offerings</NavLink>
-                    <NavLink className='navlink' to='/contact'>Testimonials</NavLink>
-                    <NavLink className='navlink' to='/projects'>Connect</NavLink>
+                    <NavLink className='navlink' to='/offerings'>Offerings</NavLink>
+                    <NavLink className='navlink' to='/testimonials'>Testimonials</NavLink>
+                    <NavLink className='navlink' to='/connect'>Connect</NavLink>
                 </div>
                 <div className='social'>
-                    <a href="mailto:connorwhitepdx@gmail.com" className='link'><EmailOutlinedIcon /></a>
-                    <a href="https://www.instagram.com/connorwhite.online" target="_blank" rel="noopener noreferrer" className='link'><InstagramIcon /></a>
+                    <a href="mailto:jessfordcare@gmail.com" className='link'><EmailOutlinedIcon /></a>
+                    <a href="https://www.instagram.com/jessford.care" target="_blank" rel="noopener noreferrer" className='link'><InstagramIcon /></a>
                 </div>
             </div>
             

@@ -1,0 +1,124 @@
+@font-face {
+    font-family: 'Neue Montreal Light';
+    src: url('../../fonts/PPNeueMontreal-Light.woff2') format('woff2'),
+        url('../../fonts/PPNeueMontreal-Light.woff') format('woff');
+}
+@font-face {
+    font-family: 'Neue Montreal Regular';
+    src: url('../../fonts/PPNeueMontreal-Regular.woff2') format('woff2'),
+        url('../../fonts/PPNeueMontreal-Regular.woff') format('woff');
+}
+@font-face {
+    font-family: 'Neue Montreal Medium';
+    src: url('../../fonts/PPNeueMontreal-Medium.woff2') format('woff2'),
+        url('../../fonts/PPNeueMontreal-Medium.woff') format('woff');
+}
+@font-face {
+    font-family: 'Neue Montreal Bold';
+    src: url('../../fonts/PPNeueMontreal-Bold.woff2') format('woff2'),
+        url('../../fonts/PPNeueMontreal-Bold.woff') format('woff');
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    gap: 2.5vw;
+}
+.option {
+    font-family: 'Neue Montreal Regular';
+    font-size: 3.5dvw;
+}
+.active {
+    font-family: 'Neue Montreal Bold';
+}
+.offering {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 5dvw;
+}
+.main {
+    
+}
+.service-img {
+    width: 90dvw;
+}
+.service-img img {
+    width: 100%;
+    border: 1px solid #1A1D22;
+}
+.location {
+    font-family: 'Neue Montreal Light';
+    color: #1A1D22;
+    font-size: 4.5dvw;
+    margin-bottom: 2.5dvh;
+}
+.intro {
+    font-family: 'Neue Montreal Regular';
+    color: #1A1D22;
+    font-size: 3.5dvw;
+    margin-bottom: 1dvh;
+}
+.details {
+    display: flex;
+    flex-direction: column;
+    gap: .5dvh;
+    margin-bottom: 2.5dvh;
+}
+.detail {
+    font-family: 'Neue Montreal Regular';
+    color: #1A1D22;
+    font-size: 3.5dvw;
+}
+.subhead {
+    font-family: 'Neue Montreal Bold';
+    color: #1A1D22;
+    font-size: 4.5dvw;
+}
+.pricing {
+    font-family: "Neue Montreal Regular";
+    color: #1A1D22;
+}
+
+@media screen and (min-width: 768px) {
+    .options {
+        justify-content: flex-end;
+    }
+    .option {
+        font-size: 1.25dvw;
+        cursor: pointer;
+    }
+    .offering {
+        flex-direction: row;
+        gap: 10dvw;
+    }
+    .main {
+        width: 50dvw;
+    }
+    .header-copy {
+        width: 60%;
+    }
+    .service-img {
+        width: 30dvw;
+    }
+    .location {
+        font-size: 1.5vw;
+        margin-bottom: 2.5dvh;
+    }
+    .intro {
+        font-size: 1.25vw;
+        margin-bottom: 1dvh;
+    }
+    .details {
+        margin-bottom: 2.5dvh;
+    }
+    .detail {
+        font-size: 1.25vw;
+    }
+    .subhead {
+        font-size: 1.5dvw;
+    }
+    .pricing {
+        font-size: 1.25vw;
+    }
+}

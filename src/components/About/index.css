@@ -1,0 +1,145 @@
+@font-face {
+    font-family: 'Neue Montreal Regular';
+    src: url('../../fonts/PPNeueMontreal-Regular.woff2') format('woff2'),
+        url('../../fonts/PPNeueMontreal-Regular.woff') format('woff');
+}
+@font-face {
+    font-family: 'Neue Montreal Medium';
+    src: url('../../fonts/PPNeueMontreal-Medium.woff2') format('woff2'),
+        url('../../fonts/PPNeueMontreal-Medium.woff') format('woff');
+}
+@font-face {
+    font-family: 'Neue Montreal Bold';
+    src: url('../../fonts/PPNeueMontreal-Bold.woff2') format('woff2'),
+        url('../../fonts/PPNeueMontreal-Bold.woff') format('woff');
+}
+
+.about {
+    width: 90dvw;
+}
+.page-title {
+    font-family: 'Neue Montreal Bold';
+    color: #1A1D22;
+    font-size: 12dvw;
+    margin-bottom: 3dvh;
+}
+hr {
+    margin-bottom: 2.5dvh;
+    color: #1A1D22;
+}
+.introduction {
+    display: flex;
+    flex-direction: column;
+    gap: 5dvh;
+}
+.copy {
+
+}
+.heading {
+    font-size: 8dvw;
+}
+.text {
+    font-family: 'Neue Montreal Regular';
+    font-size: 3.5dvw;
+}
+.bio-image {
+
+}
+.img {
+    width: 100%;
+}
+.cta {
+    text-align: center;
+}
+.btn {
+    color: white;
+    background-color: #1A1D22;
+    font-family: 'Neue Montreal Regular';
+    font-size: 4dvw;
+    border: none;
+    border-radius: 20px;
+    padding: 1dvh 5dvw;
+    cursor: pointer;
+}
+.certifications {
+
+}
+.heading {
+    font-family: 'Neue Montreal Medium';
+    margin-bottom: 2.5dvh;
+}
+.trainings {
+    display: flex;
+    flex-direction: column;
+    gap: 1dvh;
+}
+.cert {
+
+}
+.course {
+    font-family: 'Neue Montreal Regular';
+    font-size: 4dvw;
+}
+.org-date {
+    font-family: 'Neue Montreal Bold';
+    font-size: 3.5dvw;
+}
+
+@media screen and (min-width: 768px) {
+    .about {
+        width: 95dvw;
+    }
+    .page-title {
+        font-size: 5dvw;
+        margin-bottom: 2.5dvh;
+    }
+    hr {
+        margin-bottom: 5dvh;
+    }
+    .introduction {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 20dvw;
+    }
+    .copy {
+        width: 45dvw;
+    }
+    .heading {
+        font-size: 3dvw;
+        color: #1A1D22;
+        margin-bottom: 2.5dvh;
+    }
+    .text {
+        font-size: 1.25dvw;
+        color: #1A1D22;
+    }
+    .bio-image {
+        width: 30dvw;
+    }
+    .img {
+        width: 100%;
+        height: auto;
+    }
+    .cta {
+    
+    }
+    .btn {
+        font-size: 1.25dvw;
+        padding: 1dvh 2dvw;
+    }
+    .certifications {
+    
+    }
+    .trainings {
+        gap: 1.5dvh;
+    }
+    .cert {
+        
+    }
+    .course {
+        font-size: 1.5dvw;
+    }
+    .org-date {
+        font-size: 1.25dvw;
+    }
+}

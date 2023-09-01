@@ -13,13 +13,13 @@
     display: flex;
     justify-content: space-between;
     width: 90dvw;
-    padding: 2.5dvh 5dvw;
+    margin-bottom: 5dvh;
 }
 .logo {
     align-self: left;
 }
 .logo img {
-    width: 15vw;
+    width: 20vw;
 }
 .menu-btn {
     align-self: right;
@@ -48,8 +48,8 @@
 @media screen and (min-width: 768px) {
     .menu {
         width: 95dvw;
-        padding: 2.5dvh 2.5dvw;
-        gap: 2.5vw;
+        gap: 5vw;
+        margin-bottom: 10dvh;
     }
     .logo {
     
@@ -67,7 +67,7 @@
     }
     .nav {
         flex-direction: row;
-        gap: 2vw;
+        gap: 1.25vw;
     }
     .navlink {
         color: #1A1D22;

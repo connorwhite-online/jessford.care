@@ -1,4 +1,12 @@
 .App {
-  width: 100dvw;
+  width: 90dvw;
   min-height: 100dvh;
+  padding: 2.5dvh 5dvw;
+}
+
+@media screen and (min-width: 768px) {
+  .App {
+    width: 95dvw;
+    padding: 2.5dvh 2.5dvw;
+  }
 }

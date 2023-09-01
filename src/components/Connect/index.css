@@ -1,0 +1,38 @@
+@font-face {
+    font-family: 'Neue Montreal Regular';
+    src: url('../../fonts/PPNeueMontreal-Regular.woff2') format('woff2'),
+        url('../../fonts/PPNeueMontreal-Regular.woff') format('woff');
+}
+@font-face {
+    font-family: 'Neue Montreal Bold';
+    src: url('../../fonts/PPNeueMontreal-Bold.woff2') format('woff2'),
+        url('../../fonts/PPNeueMontreal-Bold.woff') format('woff');
+}
+
+.connect {
+
+}
+.info {
+    color: #1A1D22;
+    margin: 5dvh 0;
+}
+hr {
+    color: #1A1D22;
+}
+.calendar {
+
+}
+
+@media screen and (min-width: 768px) {
+    .connect {
+        width: 95dvw;
+    }
+    .info {
+        width: 60%;
+        margin: 2.5dvh auto;
+        text-align: center;
+    }
+    .calendar {
+    
+    }
+}
