@@ -10,7 +10,9 @@
 }
 
 .connect {
-
+    width: 90dvw;
+    padding: 2.5dvh 5dvw;
+    margin-top: 15dvh;
 }
 .info {
     color: #1A1D22;
@@ -26,6 +28,8 @@ hr {
 @media screen and (min-width: 768px) {
     .connect {
         width: 95dvw;
+        padding: 2.5dvh 2.5dvw;
+        margin-top: 20dvh;
     }
     .info {
         width: 60%;

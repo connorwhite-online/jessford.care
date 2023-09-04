@@ -1,3 +1,8 @@
+.offerings {
+    width: 90dvw;
+    padding: 2.5dvh 5dvw;
+    margin-top: 15dvh;
+}
 .options {
     display: flex;
     justify-content: space-between;
@@ -60,6 +65,11 @@
 }
 
 @media screen and (min-width: 768px) {
+    .offerings {
+        width: 95dvw;
+        padding: 2.5dvh 2.5dvw;
+        margin-top: 20dvh;
+    }
     .options {
         justify-content: flex-end;
     }

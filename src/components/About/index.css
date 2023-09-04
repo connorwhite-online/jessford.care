@@ -16,6 +16,8 @@
 
 .about {
     width: 90dvw;
+    padding: 2.5dvh 5dvw;
+    margin-top: 15dvh;
 }
 .page-title {
     font-family: 'Neue Montreal Bold';
@@ -66,7 +68,9 @@ hr {
 }
 .certifications {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    gap: 5dvh;
 }
 .heading {
     font-family: 'Neue Montreal Medium';
@@ -92,6 +96,8 @@ hr {
 @media screen and (min-width: 768px) {
     .about {
         width: 95dvw;
+        padding: 2.5dvh 2.5dvw;
+        margin-top: 20dvh;
     }
     .page-title {
         font-size: 5dvw;
@@ -133,6 +139,7 @@ hr {
         padding: 1dvh 2dvw;
     }
     .certifications {
+        flex-direction: row;
         justify-content: space-between;
     }
     .trainings {

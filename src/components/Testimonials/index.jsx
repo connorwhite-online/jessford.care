@@ -57,7 +57,7 @@ export default function Testimonials()  {
             <hr />
             <div className="controls">
                 <div className="arrow"><ArrowBackIosRounded onClick={prevTestimonial}/></div>
-                <div className="counter">{currentTestimonial + 1}/{Testimonials.length}</div>
+                <div className="counter">{currentTestimonial + 1} ⎯ {Testimonials.length}</div>
                 <div className="arrow"><ArrowForwardIosRounded onClick={nextTestimonial}/></div>
             </div>
             <div className="testimonial">

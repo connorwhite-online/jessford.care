@@ -10,13 +10,21 @@
 }
 
 .menu {
+    top: 0;
+    z-index: 99;
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 90dvw;
+    /* margin-bottom: 5dvh; */
+    padding: 2.5dvh 5dvw;
+    overflow-y: none;
+}
+.core {
+    width: 90dvw;
     display: flex;
     justify-content: space-between;
-    width: 90dvw;
-    margin-bottom: 5dvh;
-}
-.logo {
-    align-self: left;
 }
 .logo img {
     width: 20vw;
@@ -26,20 +34,31 @@
 }
 .links {
     display: none;
+    flex-direction: column;
+    justify-content: end;
+    gap: 5dvh;
+    width: 90dvw;
 }
 .nav {
     display: flex;
     flex-direction: column;
+    gap: 2.5dvh;
 }
 .navlink {
+    /* opacity: 0; */
+}
+.nav a {
     font-family: 'Neue Montreal Light';
     text-decoration: none;
+    color: white;
+    font-size: 8dvw;
+    border-bottom: 1px solid white;
 }
 .nav a.active {
     font-family: 'Neue Montreal Bold';
 }
 .social {
-
+    align-self: center;
 }
 .link {
     text-decoration: none;
@@ -48,8 +67,15 @@
 @media screen and (min-width: 768px) {
     .menu {
         width: 95dvw;
+        height: auto;
+        padding: 2.5dvh 2.5dvw;
         gap: 5vw;
-        margin-bottom: 10dvh;
+        /* margin-bottom: 10dvh; */
+        flex-wrap: nowrap;
+        align-items: start;
+    }
+    .core {
+        width: auto;
     }
     .logo {
     
@@ -62,6 +88,7 @@
     }
     .links {
         display: flex;
+        flex-direction: row;
         width: 100%;
         justify-content: space-between;
     }
@@ -69,7 +96,7 @@
         flex-direction: row;
         gap: 1.25vw;
     }
-    .navlink {
+    .nav a {
         color: #1A1D22;
         font-size: 1.5dvw;
     }

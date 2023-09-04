@@ -1,3 +1,8 @@
+.testimonials {
+    width: 90dvw;
+    padding: 2.5dvh 5dvw;
+    margin-top: 15dvh;
+}
 .controls {
     display: flex;
     justify-content: center;
@@ -20,12 +25,12 @@
     gap: 1dvh;
 }
 .testimonial-service {
-    font-family: 'Neue Montreal Regular';
+    font-family: 'Neue Montreal Medium';
     font-size: 8dvw;
     color: #1A1D22;
 }
 .testimonial-location {
-    font-family: 'Neue Montreal Bold';
+    font-family: 'Neue Montreal Light';
     font-size: 5dvw;
     color: #1A1D22;
 }
@@ -36,23 +41,32 @@
 }
 
 @media screen and (min-width: 768px) {
+    .testimonials {
+        width: 95dvw;
+        padding: 2.5dvh 2.5dvw;
+        margin-top: 20dvh;
+    }
     .controls {
         gap: 2.5dvw;
         margin-bottom: 5dvh;
+
     }
     .counter {
-        font-size: 2.5dvw;
+        font-size: 1.5dvw;
+    }
+    .arrow svg {
+        font-size: 1.5dvw;
     }
     .testimonial {
         gap: 1dvh;
     }
     .testimonial-service {
-        font-size: 3.5dvw;
+        font-size: 3dvw;
     }
     .testimonial-location {
-        font-size: 2dvw;
+        font-size: 1.5dvw;
     }
     .testimonial-copy {
-        font-size: 1.5dvw;
+        font-size: 1.25dvw;
     }
 }
