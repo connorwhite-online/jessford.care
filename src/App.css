@@ -18,3 +18,56 @@
   src: url('./fonts/PPNeueMontreal-Bold.woff2') format('woff2'),
       url('./fonts/PPNeueMontreal-Bold.woff') format('woff');
 }
+
+.loader {
+  width: 90dvw;
+  height: 100dvh;
+  padding: 0 5dvw;
+  flex-direction: column;
+  gap: 10dvh;
+  justify-content: center;
+  align-items: center;
+}
+.loader-copy {
+
+}
+.loader-title {
+  font-family: 'Neue Montreal Bold';
+  font-size: 9dvw;
+}
+.loader-subtitle {
+  font-family: 'Neue Montreal Regular';
+  font-size: 4dvw;
+}
+.loader-img {
+}
+.loader-img img {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .loader {
+    width: 80dvw;
+    height: 100dvh;
+    flex-direction: row;
+    gap: 5dvw;
+    padding: 0 10dvw;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .loader-copy {
+    width: 50%;
+  }
+  .loader-title {
+    font-size: 3dvw;
+  }
+  .loader-subtitle {
+    font-size: 1.25dvw;
+  }
+  .loader-img {
+    width: 50%;
+  }
+  .loader-img img {
+  
+  }
+}
