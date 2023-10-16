@@ -63,10 +63,11 @@ function App() {
       }, {
         display: 'none',
       }, 7);
-      tl.fromTo('.site', {
+      tl.from('.site', {
         display: 'none',
-      }, {
-        display: 'block',
+        opacity: 0,
+        duration: 2,
+        ease: 'linear'
       }, 7);
     }, appRef.current);
     return () => ctx.revert();

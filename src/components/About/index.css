@@ -24,6 +24,7 @@
     color: #1A1D22;
     font-size: 12dvw;
     margin-bottom: 3dvh;
+    clip-path: inset(0 0% 0 0);
 }
 hr {
     margin-bottom: 2.5dvh;

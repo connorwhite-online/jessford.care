@@ -1,11 +1,39 @@
 import React, { useRef, useEffect, useState } from 'react';
+import gsap from 'gsap';
 import { InlineWidget } from 'react-calendly';
 import './index.css';
 
 
 export default function Connect() {
+
+    const connect = useRef(null);
+
+    useEffect(() => {
+        let ctx = gsap.context(() => {
+            let tl = gsap.timeline();
+            tl.from(".page-title", {
+                duration: 1,
+                opacity: 0,
+                clipPath: "inset(0 0 100% 0)",
+                ease: "power3.out",
+            });
+            tl.from("hr", {
+                clipPath: "inset(0 100% 0 0)",
+                duration: 1,
+                ease: "power3.out",
+            });
+            tl.from(".info, .calendar", {
+                opacity: 0,
+                stagger: 0.5,
+                duration: 1,
+                ease: "power3.out",
+            });
+        }, connect.current);
+        return () => ctx.revert();
+    }, []);
+
     return (
-        <div className="connect">
+        <div className="connect" ref={connect}>
             <div className="page-title">
                 Connect
             </div>

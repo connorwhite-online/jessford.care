@@ -1,4 +1,5 @@
 import React, { useRef, useState, useEffect } from "react";
+import gsap from "gsap";
 import { ArrowBackIosRounded, ArrowForwardIosRounded } from "@mui/icons-material";
 import "./index.css";
 
@@ -37,6 +38,39 @@ export default function Testimonials()  {
         }
     ]);
 
+    const testimonials = useRef(null);
+
+    useEffect(() => {
+        let ctx = gsap.context(() => {
+            let tl = gsap.timeline();
+            tl.from(".page-title", {
+                duration: 1,
+                opacity: 0,
+                clipPath: "inset(0 0 100% 0)",
+                ease: "power3.out",
+            });
+            tl.from("hr", {
+                clipPath: "inset(0 100% 0 0)",
+                duration: 1,
+                ease: "power3.out",
+            });
+            tl.from(".controls", {
+                stagger: 0.25,
+                opacity: 0,
+                duration: 1,
+                ease: "power3.out",
+            })
+            tl.from(".testimonial-service, .testimonial-location, .testimonial-copy", {
+                opacity: 0,
+                duration: 1.25,
+                clipPath: "inset(0 0 100% 0)",
+                ease: "power3.out",
+                stagger: 0.25,
+            });
+        }, testimonials.current);
+        return () => ctx.revert();
+    }, []);
+
     const [currentTestimonial, setCurrentTestimonial] = useState(0);
 
     const nextTestimonial = () => {
@@ -50,7 +84,7 @@ export default function Testimonials()  {
     console.log(currentTestimonial);
 
     return (
-        <div className="testimonials">
+        <div className="testimonials" ref={testimonials}>
             <div className="page-title">
                 Testimonials
             </div>

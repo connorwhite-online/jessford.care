@@ -1,4 +1,5 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
+import gsap from 'gsap';
 import './index.css';
 export default function About() {
 
@@ -50,9 +51,41 @@ export default function About() {
         }
     ])
         
+    const about = useRef(null);
+
+    useEffect(() => {
+        let ctx = gsap.context(() => {
+            let tl = gsap.timeline();
+            tl.from(".page-title", {
+                duration: 1,
+                opacity: 0,
+                clipPath: "inset(0 0 100% 0)",
+                ease: "power3.out",
+            });
+            tl.from("hr", {
+                clipPath: "inset(0 100% 0 0)",
+                duration: 1,
+                ease: "power3.out",
+            });
+            tl.from(".heading", {
+                duration: 1,
+                clipPath: "inset(0 0 100% 0)", 
+                opacity: 0,
+                ease: "power3.out",
+            });
+            tl.from(".text, .image", {
+                opacity: 0,
+                duration: 1.25,
+                clipPath: "inset(0 0 100% 0)",
+                ease: "power3.out",
+                stagger: 0.25,
+            });
+        }, about.current);
+        return () => ctx.revert();
+    }, []);
 
     return (
-        <div className='about'>
+        <div className='about' ref={about}>
             <div className='page-title'>About</div>
             <hr />
             <div className='introduction'>

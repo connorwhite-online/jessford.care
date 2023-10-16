@@ -1,4 +1,5 @@
 import React, { useRef, useState, useEffect } from 'react';
+import gsap from 'gsap';
 import './index.css';
 
 export default function Offerings() {
@@ -81,6 +82,45 @@ export default function Offerings() {
         }
     ]);
 
+    const offerings = useRef(null);
+
+    useEffect(() => {
+        let ctx = gsap.context(() => {
+            let tl = gsap.timeline();
+            tl.from(".page-title", {
+                duration: 1,
+                opacity: 0,
+                clipPath: "inset(0 0 100% 0)",
+                ease: "power3.out",
+            });
+            tl.from("hr", {
+                clipPath: "inset(0 100% 0 0)",
+                duration: 1,
+                ease: "power3.out",
+            });
+            tl.from(".option", {
+                stagger: 0.25,
+                opacity: 0,
+                duration: 1,
+                ease: "power3.out",
+            })
+            tl.from(".heading", {
+                duration: 1,
+                clipPath: "inset(0 0 100% 0)", 
+                opacity: 0,
+                ease: "power3.out",
+            });
+            tl.from(".service-img, .location, .intro, .details, .subhead", {
+                opacity: 0,
+                duration: 1.25,
+                clipPath: "inset(0 0 100% 0)",
+                ease: "power3.out",
+                stagger: 0.25,
+            });
+        }, offerings.current);
+        return () => ctx.revert();
+    }, []);
+
     const [selectedOffering, setSelectedOffering] = useState(0);
 
     // set selected offering to the active offering
@@ -90,7 +130,7 @@ export default function Offerings() {
     console.log(selectedOffering);
 
     return (
-        <div className="offerings">
+        <div className="offerings" ref={offerings}>
             <div className="page-title">
                 Offerings
             </div>
